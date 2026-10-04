@@ -1,0 +1,38 @@
+@Pertemuan6_HostAddress = http://localhost:5170
+
+### GET semua data
+GET {{Pertemuan6_HostAddress}}/api/Telephone
+Accept: application/json
+
+### GET by id
+GET {{Pertemuan6_HostAddress}}/api/Telephone/1
+Accept: application/json
+
+### POST (tambah data)
+POST {{Pertemuan6_HostAddress}}/api/Telephone
+Content-Type: application/json
+
+{
+  "namaUser": "Siti",
+  "alamat": "Jl. Raya Batam No. 5",
+  "noTelp": 6285612345678,
+  "kodePost": "29432",
+  "dateTime": "2026-10-03T20:00:00"
+}
+
+### PUT (ubah data id 1)
+PUT {{Pertemuan6_HostAddress}}/api/Telephone/1
+Content-Type: application/json
+
+{
+  "namaUser": "Sheren Updated",
+  "alamat": "Nagoya, Batam",
+  "noTelp": 6283161643588,
+  "kodePost": "29444",
+  "dateTime": "2026-10-03T21:00:00"
+}
+
+### DELETE (hapus data id 2)
+DELETE {{Pertemuan6_HostAddress}}/api/Telephone/2
+
+###
